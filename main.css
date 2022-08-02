@@ -1,0 +1,99 @@
+:root{
+    --primary-color: rgb(158, 158, 158);
+    --text-color: rgb(61, 61, 61);
+    --primary-font: "Montserrat"
+}
+*{
+    color: var(--text-color);
+    font-family: var(--primary-font);
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.cart-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 5rem;
+    flex-wrap: wrap;
+}
+
+.wrapper{
+    width: 270px;
+    height: 260px;
+    border: 1px solid #ccc;
+}
+.top{
+    width: 270px;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+}
+.main-img{
+    width: 100%;
+    height: auto;
+}
+.btn-add{
+    display: none;
+}
+.top:hover .btn-add{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 72, 0);
+    padding: 0.7rem 0rem;
+    color: #fff;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 80%;
+}
+
+.button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.bi.bi-basket-fill.add-icon{
+    margin-right: 1rem;
+}
+.bi.bi-basket-fill.add-icon path{
+    color: #fff;
+}
+
+.bottom{
+    margin: 1rem 1rem;
+}
+.title{
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-align: center;
+}
+.price{
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.inverted-8 {
+    background:
+      linear-gradient(-45deg, #000  40%, #fff 0 60%, #000  0) right/300% 100% no-repeat,
+      linear-gradient(-45deg, #0000 40%, rgba(255, 255, 255, 0.56) 0 60%, #0000 0) right/300% 100% no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+}
+.inverted-8:hover {
+    background-position: left;
+    transition: 0.8s
+}
+
