@@ -1,0 +1,74 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+button {
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.ba-app{
+    width: 100%;
+    display: flex;
+}
+.ba-filter{
+    width: 20%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border-right: 1px solid #ccc;
+}
+.ba-gender{
+    margin: 1rem 0rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2rem;
+}
+.ba-gender-title{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.ba-gender-content{
+    display: flex;
+    margin-bottom: 0.2rem;
+}
+
+.ba-gender-text{
+    margin-left: 0.6rem;
+}
+
+.ba-main-content{
+    width: 80%;
+    font-weight: bold;
+}
+.ba-gender-content-image{
+    width: 20px;
+    height: 20px;
+}
+
+.ba-gender-content input{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 3px;
+    border: solid 1px #bababa;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+.ba-gender-content input::after{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 4px;
+    top: 3px;
+    left: 2.5px;
+    border-left: solid 3px #fff;
+    border-bottom: solid 3px #fff;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
