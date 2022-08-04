@@ -72,3 +72,6 @@ button {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+.ba-gender.final-filter-class{
+    border-bottom: 0px solid #fff;
+}
